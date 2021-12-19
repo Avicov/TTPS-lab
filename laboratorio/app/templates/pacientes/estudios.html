@@ -33,17 +33,6 @@
 <table class="table table-striped" id="estudios">
   <thead class="thead-dark">
     <tr>
-<<<<<<< HEAD
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Médico Derivante&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Tipo Estudio&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Estado&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Abonado&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Retrasado&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Fecha Alta&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Costo&#8593&#8595</th>
-      <th class="sortable" scope="col" onclick="ordenar()" style="cursor:pointer">Diagnostico Presuntivo&#8593&#8595</th>
-      <th >Acciones</th>
-=======
       <th scope="col" scope="col">Paciente</th>
       <th class="sortable" scope="col" scope="col" onclick="ordenar()" style="cursor:pointer">Médico Derivante&#8593&#8595</th>
       <th class="sortable" scope="col" scope="col" onclick="ordenar()" style="cursor:pointer">Tipo Estudio&#8593&#8595</th>
@@ -54,7 +43,6 @@
       <th scope="col">Presupuesto</th>
       <th class="sortable" scope="col" scope="col" onclick="ordenar()" style="cursor:pointer">Diagnostico Presuntivo&#8593&#8595</th>
       <th scope="col">Acciones</th>
->>>>>>> 7fe2ddc3687a0a78c14a6ed32845bea2c476a9d0
     </tr>
   </thead>
   <tbody>
@@ -86,10 +74,6 @@
       <td>{{estudio.fechaAlta}}</td>
       <td>{{estudio.presupuesto}}</td>
       <td>{{estudio.patologia}}</td>
-<<<<<<< HEAD
-     <td> <a href="{% url 'Detalle_Estudio_Paciente' id=estudio.id %}" class="btn btn-info"
-      >Ver detalle</a</td>
-=======
       <td>
         {% if estudio.estado.detalle == "1"%}
           {% if not conf.modoPacienteObligado %}
@@ -119,7 +103,6 @@
         {% endif %}
         <a href="{% url 'Detalle_Estudio_Paciente' id=estudio.id %}" class="btn btn-info">Ver detalle</a>
       </td>
->>>>>>> 7fe2ddc3687a0a78c14a6ed32845bea2c476a9d0
     </tr>
     {% endfor %}
   </tbody>
@@ -206,9 +189,5 @@
 
       init();
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 7fe2ddc3687a0a78c14a6ed32845bea2c476a9d0
 </script>
 {% endblock %}

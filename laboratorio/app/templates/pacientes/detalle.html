@@ -35,11 +35,7 @@
     <div class="d-flex justify-content-around mt-3">
       <div class="d-flex flex-column align-items-center w-100">
         <h2 class="text-info"><strong>Estado</strong></h2>
-<<<<<<< HEAD
-        <p class=""><em>{{ estado_act.nombre }}</em></p>
-=======
         <p class=""><em>{{ estado_actual.nombre }}</em></p>
->>>>>>> 7fe2ddc3687a0a78c14a6ed32845bea2c476a9d0
       </div>
       <div class="d-flex flex-column align-items-center w-100">
         <h2 class="text-info"><strong>Tipo de estudio</strong></h2>
@@ -66,21 +62,12 @@
       <div class="m-auto">
         <ol class="bg-white m-4">
           {% for estado in estados %}
-<<<<<<< HEAD
-            {% if estado.id < estudio.estado.id %}
-              <li class="table-success text-dark p-1"><del>{{ estado.nombre }}</del></li>
-            {% elif estado.id == estado_act.id %}
-              <li class="table-warning text-dark p-1"><strong>{{ estado.nombre }}</strong></li>
-            {% else %}
-              <li class="table-danger text-dark p-1">{{ estado.nombre }}</li>
-=======
             {% if estado.id < estado_actual.id %}
             <li class="table-success text-dark p-1"><del>{{ estado.nombre }}</del></li>
             {% elif estado.id == estado_actual.id %}
             <li class="table-warning text-dark p-1"><strong>{{ estado.nombre }}</strong></li>
             {% else %}
             <li class="table-danger text-dark p-1">{{ estado.nombre }}</li>
->>>>>>> 7fe2ddc3687a0a78c14a6ed32845bea2c476a9d0
             {% endif %}
           {% endfor %}
           </ol>
